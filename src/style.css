@@ -1,7 +1,60 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
-    margin: 0;
-    padding: 0;
+/* Fondo con gradiente dinámico */
+/* Fondo con gradiente dinámico */
+/* Fondo con gradiente dinámico */
+body {
+  background: linear-gradient(120deg, #FF416C, #FF4B2B, #1E90FF, #6A5ACD);
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s infinite alternate;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Tarjeta con efecto glassmorphism */
+.excuse-container {
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  color: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen de excusas */
+.excuse-image img {
+  width: 80%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.excuse-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Botón moderno con efecto de pulsación */
+.btn-modern {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  position: relative;
+}
+
+.btn-modern:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 20px rgba(255, 65, 108, 0.6);
 }
